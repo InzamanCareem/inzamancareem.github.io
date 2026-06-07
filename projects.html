@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects showcase for Inzaman Careem — software, AI, and computer vision work." />
+  <title>Inzaman Careem | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="projects-page">
+  <div class="bg-orbs" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">IC</span>
+      <span class="brand-text">
+        <strong>Inzaman Careem</strong>
+        <small>Projects Showcase</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section projects-hero reveal">
+      <div class="section-heading">
+        <p>Projects</p>
+        <h1>Turning data into intelligent systems.</h1>
+        <p class="projects-intro">A collection of projects in machine learning, data analysis, and AI systems—focused on turning data into insights and building practical, real-world solutions.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="algorithms">Algorithms</button>
+        <button class="filter-btn" data-filter="games">Games</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="projects-showcase-grid">
+        <article class="glass project-showcase" id="ahris" data-category="ai">
+          <div class="project-visual visual-ai">
+            <div class="browser-mockup">
+              <!-- <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">AI + Backend</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/Automated-HR-AI-System.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>AHRIS — Automated HR Intelligence System</h2>
+            <p>A multi-agent AI system that automates HR workflows using LLM-based intent routing, memory systems, and structured API orchestration.</p>
+            <div class="mini-tags"><span>Python</span><span>LangGraph</span><span>LLM</span><span>Agents</span><span>STM/LTM</span><span>SQLite</span></div>
+            <ul>
+                <li>Routes natural language HR queries using intent classification</li>
+                <li>Implements short-term and long-term memory for contextual responses</li>
+                <li>Built FastAPI-based backend for scalable request handling</li>
+                <li>Supports audit logging and country-based HR analysis</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" id="neurosight" data-category="ai">
+          <div class="project-visual">
+            <div class="browser-mockup">
+              <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/neurosight-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">ML + Backend</span>
+              <div class="project-links">
+                <a href="https://github.com/Chanura04/DSGP-Brain-Tumor-Detection.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>NeuroSight — Brain Tumor Detection and Classification System</h2>
+            <p>A deep learning-based medical imaging system that classifies brain tumors from MRI and CT scans to assist early diagnosis.</p>
+            <div class="mini-tags"><span>Python</span><span>CNN</span><span>OpenCV</span><span>Deep Learning</span><span>Medical Imaging</span></div>
+            <ul>
+              <li>Uses CNN models for medical image classification</li>
+              <li>Processes MRI/CT scans with OpenCV preprocessing pipeline</li>
+              <li>Performs multi-class tumor detection and classification</li>
+              <li>Designed for improved diagnostic accuracy and early detection support</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" id="textextract" data-category="systems">
+          <div class="project-visual">
+            <div class="browser-mockup">
+              <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/textextract-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Systems</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/TextExtract.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>TextExtract — Image to Text Conversion</h2>
+            <p>A system for extracting text from images using computer vision and OCR techniques.</p>
+            <div class="mini-tags"><span>Python</span><span>OpenCV</span><span>Tesseract</span></div>
+            <ul>
+              <li>Supports multiple languages and fonts</li>
+              <li>Preprocessing for improved accuracy</li>
+              <li>Output in various formats (TXT, JSON)</li>
+              <li>Potential use in document digitization</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" id="healthsense" data-category="ai">
+          <div class="project-visual visual-ai">
+            <div class="browser-mockup">
+              <!-- <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">ML + Backend</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/HealthSense.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>HealthSense — Disease Tracking & Forecasting System</h2>
+            <p>A Java and Python-powered system for tracking health reports, managing records, and forecasting future trends using machine learning.</p>
+            <div class="mini-tags"><span>Java</span><span>Python</span><span>SQLite</span><span>LSTM</span><span>Data Structures</span></div>
+            <ul>
+              <li>Integrates real-world disease data</li>
+              <li>Forecasts future case trends</li>
+              <li>Uses queue, stack, and report management logic</li>
+              <li>Supports country-based analysis</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="algorithms">
+          <div class="project-visual">
+            <div class="browser-mockup">
+              <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Graph Algorithms</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/Graph-Algorithms-Visualizer.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>Graph Algorithms Visualizer</h2>
+            <p>An interactive learning tool that visualizes graph traversal and pathfinding algorithms step-by-step.</p>
+            <div class="mini-tags"><span>Python</span><span>Queue</span><span>Stack</span><span>Manim</span><span>BFS</span><span>DFS</span><span>A*</span></div>
+            <ul>
+              <li>Visualizes BFS, DFS, and A* pathfinding algorithms</li>
+              <li>Step-by-step animation of node exploration</li>
+              <li>Highlights traversal order and shortest paths</li>
+              <li>Built to improve algorithm understanding visually</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="games">
+          <div class="project-visual visual-games">
+            <div class="browser-mockup">
+              <!-- <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Game Development</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/Shadowblade-Requiem.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>Shadowblade Requiem</h2>
+            <p>A 2D action-adventure game built with Python and Pygame featuring combat mechanics and a dark fantasy zombie theme.</p>
+            <div class="mini-tags"><span>Python</span><span>Pygame</span><span>Game Development</span><span>Sprite Animation</span></div>
+            <ul>
+              <li>Player movement, combat, and enemy AI mechanics</li>
+              <li>Sprite-based animation system</li>
+              <li>Level design with interactive gameplay elements</li>
+              <li>Built using Python and Pygame engine</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="ai">
+          <div class="project-visual">
+            <div class="browser-mockup">
+              <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/machine-learning-playground-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Machine Learning</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/Machine-Learning-Playground.git" target="_blank">GitHub</a>
+
+              </div>
+            </div>
+            <h2>Machine Learning Playground</h2>
+            <p>A collection of machine learning experiments designed to explore models, model behavior, and practical AI workflows.</p>
+            <div class="mini-tags"><span>Python</span><span>Scikit-Learn</span><span>ML</span><span>Data Science</span><span>AI</span></div>
+            <ul>
+              <li>Multiple machine learning models</li>
+              <li>Interactive hyperparameter controls</li>
+              <li>Real-time training & validation loss visualization</li>
+              <li>Run comparison and history tracking</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="ai">
+          <div class="project-visual visual-ai">
+            <div class="browser-mockup">
+              <!-- <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Predictive Analytics</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/Customer-Telecom-Churn-Prediction.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>Telecom Customer Churn Prediction</h2>
+            <p>A machine learning project that predicts customer churn using historical telecom data and behavioral patterns.</p>
+            <div class="mini-tags"><span>Python</span><span>Pandas</span><span>TensorFlow</span><span>Matplotlib</span><span>Analytics</span></div>
+            <ul>
+              <li>Customer retention analysis</li>
+              <li>Data preprocessing pipeline</li>
+              <li>Classification model training</li>
+              <li>Business-focused predictive insights</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="web">
+          <div class="project-visual">
+            <div class="browser-mockup">
+              <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/travelme-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Web Application</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/TravelMe.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>TravelMe</h2>
+            <p>A modern, responsive travel platform for exploring and booking trips. Users can browse destinations, filter packages, add trips to a cart, and complete bookings through a simple, validated form with a smooth experience.</p>
+            <div class="mini-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Travel</span><span>UI/UX</span></div>
+            <ul>
+              <li>Responsive web design</li>
+              <li>Travel destination presentation</li>
+              <li>Modern user interface concepts</li>
+              <li>Front-end development practice</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="systems">
+          <div class="project-visual visual-systems">
+            <div class="browser-mockup">
+              <!-- <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Management System</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/TeamMate-System.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>Team Management System</h2>
+            <p>TeamMate is a Java-based application that automatically forms balanced, diverse teams for a university gaming club's tournaments and events. It optimizes teams based on skill, role, personality, and game preferences.</p>
+            <div class="mini-tags">
+              <span>Java</span><span>OOP</span><span>Algorithm</span><span>Concurrency</span><span>File Handling</span>
+            </div>
+            <ul>
+              <li>Smart survey-based member profiling</li>
+              <li>Intelligent team matching algorithm</li>
+              <li>CSV data handling for persistence</li>
+              <li>Multithreaded processing & error handling</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="systems">
+          <div class="project-visual">
+            <div class="browser-mockup">
+              <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/supermarket-inventory-management-system-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Inventory System</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/Super-Market-Inventory-Management-System.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>Supermarket Inventory Management System</h2>
+            <p>A Java-based inventory management solution that streamlines stock tracking, product management, and inventory operations.</p>
+            <div class="mini-tags"><span>Java</span><span>JavaFx</span><span>Database</span><span>Management</span><span>OOP</span></div>
+            <ul>
+              <li>Inventory tracking and monitoring</li>
+              <li>Product management workflows</li>
+              <li>Efficient stock control processes</li>
+              <li>Business management functionality</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass project-showcase" data-category="games">
+          <div class="project-visual visual-games">
+            <div class="browser-mockup">
+              <!-- <video class="project-video hover-video" muted playsinline preload="metadata">
+                <source src="videos/graph-algorithms-visualizer-demo.mp4" type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="badge">Inventory System</span>
+              <div class="project-links">
+                <a href="https://github.com/InzamanCareem/C-CLI-Games-Collection.git" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h2>C CLI Games Collection</h2>
+            <p>A collection of classic games built to practice problem-solving, game logic, user input handling, data structures, and general C programming concepts.</p>
+            <div class="mini-tags"><span>C</span><span>Command Line</span><span>Game Development</span></div>
+            <ul>
+              <li>Collection of classic terminal games</li>
+              <li>Pure C-based game logic implementation</li>
+              <li>Interactive command-line gameplay</li>
+              <li>Randomization & input validation systems</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="glass callout-card">
+        <p class="eyebrow">Projects</p>
+        <h2>Built with purpose, not just practice.</h2>
+        <p>Each project focuses on solving real problems, improving user experience, or exploring technical challenges. I prioritize clean architecture, usability, and performance.</p>
+    <a class="btn btn-primary" href="index.html#contact">Contact Me</a>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top">&uarr;</button>
+
+  <footer class="footer">
+    <p>&copy; 2026 Inzaman Careem. Projects showcase page.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>
